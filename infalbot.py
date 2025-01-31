@@ -20,7 +20,7 @@ import streamlit as st
 st.title("Infal bot 0.1")
 
 #Introducción
-st.markdown("Este programa calcula la rentabilidad, volatilidad y máxima caída de Infal desde la fecha de compra que proporciones.")
+st.markdown("Infal bot 0.1 calcula la rentabilidad, volatilidad y máxima caída de Infal desde la fecha de compra que proporciones. Es bastante retarded el pobre")
 
 # Obtención de la acción
 infal = yf.Ticker("0P0001MIBG.F")
@@ -31,9 +31,9 @@ historical_data = infal.history(period="max")
 # Eliminar la zona horaria del índice
 historical_data.index = historical_data.index.tz_localize(None)
 
-# Mostrar los primeros registros de datos históricos
-st.subheader("Datos históricos de la acción:")
-st.write(historical_data.head())
+# # Mostrar los primeros registros de datos históricos
+# st.subheader("Datos históricos de la acción:")
+# st.write(historical_data.head())
 
 # Preguntar cuándo compraste las acciones (Streamlit Text Input)
 compra_fecha = st.text_input("¿En qué fecha compraste el fondo Infal patrimonio? (Formato: YYYY-MM-DD): ")

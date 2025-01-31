@@ -19,7 +19,7 @@ import streamlit as st
 # Título de la aplicación
 st.title("Infal bot 0.1")
 
- Introducción
+#Introducción
 st.markdown("Este programa calcula la rentabilidad, volatilidad y máxima caída de Infal desde la fecha de compra que proporciones.")
 
 # Obtención de la acción
